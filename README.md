@@ -1,3 +1,3 @@
 # AWSLegacy
 
-A description of this package.
+Please, don't use this.
