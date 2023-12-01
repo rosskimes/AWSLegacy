@@ -7,12 +7,12 @@ let package = Package(
     name: "AWSLegacy",
 	platforms: [.iOS(.v14), .macCatalyst(.v14), .tvOS(.v14), .watchOS(.v7)],
     products: [
-        .library(name: "AWSCore", targets: ["AWSCore"]),
-		.library(name: "AWSCognitoIdentityProvider", targets: ["AWSCognitoIdentityProvider"])
+        .library(name: "AWSCoreLegacy", targets: ["AWSCoreLegacy"]),
+		.library(name: "AWSCognitoIdentityProviderLegacy", targets: ["AWSCognitoIdentityProviderLegacy"])
     ],
     dependencies: [],
     targets: [
-        .target(name: "AWSCore", dependencies: []),
-		.target(name: "AWSCognitoIdentityProvider", dependencies: ["AWSCore"])
+        .target(name: "AWSCoreLegacy", dependencies: []),
+		.target(name: "AWSCognitoIdentityProviderLegacy", dependencies: ["AWSCoreLegacy"])
     ]
 )
